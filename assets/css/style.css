@@ -28,6 +28,7 @@ html {
     /* Fonte */
     font-size: 15px;
     font-family: 'Segoe UI';
+    font-weight: 800;
     
 
     /* Cor */
@@ -38,30 +39,39 @@ html {
     /* Efeitos */
     text-transform: uppercase;
     border: 1px solid white;
-    box-shadow: 5px 5px 5px white;
+    box-shadow: 0 0 200px blueviolet;
     border-radius: 40px;
 }
 
+
+/* Titulo */
 .container_principal .titulo{
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: bolder;
     color: white;
     text-transform: capitalize;
+    text-decoration: underline white;
 }
 
 
 .nome, .password, .mail, .c_mail {
+    background-color: blueviolet;
     margin: 5px 0;
     padding: 4px;
     border-radius: 50px;
+    box-shadow: 0 0 4px white;
 }
 
-.nome:hover, .password:hover, .mail:hover, .c_mail:hover {
-    background: transparent;
+input::placeholder {
+    color: white;
+    font-weight: 600;
 }
-.nome:active, .password:hover, .mail:hover, .c_mail:hover {
-    background: transparent;
-    transform: scale(1.1);
+
+.nome:hover, .password:hover, .mail:hover, .c_mail:hover{
+    background: rgba(26, 2, 48, 0.892);
+    box-shadow: 0 0 8px white;
+    color: white;
 }
 
 /* Botão de enviar */
