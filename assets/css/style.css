@@ -61,17 +61,27 @@ html {
     padding: 4px;
     border-radius: 50px;
     box-shadow: 0 0 4px white;
+    transition: all 0.8s;
 }
 
 input::placeholder {
-    color: white;
+    color: rgba(255, 255, 255, 0.236);
     font-weight: 600;
 }
 
+/* Efeito dos inputs */
 .nome:hover, .password:hover, .mail:hover, .c_mail:hover{
     background: rgba(26, 2, 48, 0.892);
     box-shadow: 0 0 8px white;
     color: white;
+    transform: scale(1.1);
+}
+
+.nome:focus, .password:focus, .mail:focus, .c_mail:focus{
+    background: rgba(26, 2, 48, 0.892);
+    box-shadow: 0 0 8px white;
+    color: white;
+    transform: scale(1.1);
 }
 
 /* Botão de enviar */
