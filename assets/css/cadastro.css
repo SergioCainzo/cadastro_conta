@@ -1,0 +1,197 @@
+/* Configuração padrão */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html {
+    background-color: black;
+}
+
+.formulario {
+    width: 25%;
+    border: none;
+
+    /* position */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container_principal{
+    /* configuração */
+    display: flex;
+    flex-flow: column wrap;
+    padding: 2em;
+    
+    /* Fonte */
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    font-weight: 800;
+    
+
+    /* Cor */
+    background-color: rgba(26, 2, 48, 0.892);
+    color: white;
+
+
+    /* Efeitos */
+    text-transform: uppercase;
+    border: 1px solid white;
+    box-shadow: 0 0 200px blueviolet;
+    border-radius: 40px;
+}
+
+/* Titulo do formulario */
+.container_principal .titulo{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: underline white;
+}
+
+/* Placeholder */
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.236);
+    font-weight: 600;
+}
+
+/* container familia */
+.container_familia {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.familia{
+    margin-top: 5px;
+    border-radius: 50px;
+    padding: 5px 10px;
+    background-color: blueviolet;
+    transition: all 0.8s;
+    color: white;
+    font-weight: 600;
+}
+
+.familia:hover{
+    background: rgba(26, 2, 48, 0.892);
+    box-shadow: 0 0 8px white;
+    color: white;
+    transform: scale(1.1);
+}
+
+.familia:focus{
+    background: rgba(26, 2, 48, 0.892);
+    box-shadow: 0 0 8px white;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Container classe */
+.container_classe {
+    margin: 15px 0;
+}
+
+select{
+    margin-top: 6px;
+    padding: 4px;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    background-color: blueviolet;
+    color: white;
+    font-weight: 600;
+}
+
+select:hover{
+    background: rgba(26, 2, 48, 0.892);
+    box-shadow: 0 0 8px white;
+    color: white;
+    transform: scale(1.1);
+}
+
+select:focus{
+    background: rgba(26, 2, 48, 0.892);
+    box-shadow: 0 0 8px white;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+/* container estilo */
+.container_estilo{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 15px 0;
+}
+
+#radio-succ{
+    margin-top: 10px;
+}
+
+
+/* container gear */
+.container_gear {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 15px 0;
+    align-items: center;
+}
+
+.pa, .pad, .pd {
+    padding: 5px 10px;
+}
+
+input.pa, input.pad, input.pd {
+    width: 25px;
+    margin: 5px 10px;
+    border-radius: 50px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: 600;
+    transition: all 0.8s;
+}
+
+
+input.pa:focus, input.pad:focus, input.pd:focus {
+    background: rgba(26, 2, 48, 0.892);
+    box-shadow: 0 0 8px white;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+/* Botão */
+
+.enviar {
+    margin: 15px 0 10px 0;
+    padding: 10px;
+    border-radius: 60px;
+    border: 1px solid white;
+    font-size: 18px;
+    
+    /* Cor do botão */
+    background-color: blueviolet;
+    color: white;
+
+    /* efeitos do botão */
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.enviar:hover {
+    font-size: 20px;
+
+    /* cor do botão */
+    background-color: rgba(26, 2, 48, 0.892);
+
+    /* efeito do botão */
+    border: 1px solid white;
+    transform: scale(1.1);
+
+}

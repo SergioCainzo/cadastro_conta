@@ -64,6 +64,8 @@ html {
     transition: all 0.8s;
 }
 
+/* Placeholder */
+
 input::placeholder {
     color: rgba(255, 255, 255, 0.236);
     font-weight: 600;

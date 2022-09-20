@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+
+    <title>Cadastro</title>
+</head>
+<body>
+    <form action="" class="container formulario">
+        <fieldset class="container_principal">
+            <!-- Campo de Informações do Personagem -->
+            <legend class="titulo">Informações do Personagem</legend>
+                <!-- Campo com os dados do usuário -->
+                <fieldset class="container_familia">
+                    <!-- Nome de Familia -->
+                    <label for="familia">Nome de Família</label>
+                    <input type="text" class="familia" id="familia" required placeholder="Nome de Familia">
+                </fieldset>
+
+                <!-- Seleção de Classe -->
+                <fieldset class="container_classe">
+                    <legend>Escolha a sua classe</legend>
+                        <select>
+                            <option>Warrior</option>
+                            <option>Ranger</option>
+                            <option>Sorccerer</option>
+                            <option>Beserker</option>
+                            <option>Witch</option>
+                            <option>Wizard</option>
+                            <option>Tamer</option>
+                            <option>Valkyrie</option>
+                            <option>Ninja</option>
+                            <option>Kunoichi</option>
+                            <option>Musa</option>
+                            <option>Maehwa</option>
+                            <option>Striker</option>
+                            <option>Mistic</option>
+                            <option>Dark Knight</option>
+                            <option>Archer</option>
+                            <option>Lahn</option>
+                            <option>Shai</option>
+                            <option>Guardian</option>
+                            <option>Hashashin</option>
+                            <option>Nova</option>
+                            <option>Sage</option>
+                            <option>Corsair</option>
+                            <option>Drakania</option>
+                        </select>
+                </fieldset>
+                <!-- Estilo de Jogo -->
+                <fieldset class="container_estilo">
+                    <legend>Qual o seu estilo de jogo</legend>
+                    <label for="radio-succ"><input type="radio" name="estilo" value="Succession" id="radio-succ"checked> Succession</label>
+                    <label for="radio-awak"><input type="radio" name="estilo" value="Awakened" id="radio-awak"> Awakened</label>
+                </fieldset>
+
+                <!-- Gear do Personagem -->
+                <fieldset class="container_gear">
+                    <legend>Qual o seu Gear</legend>
+                    <label for="pa">PA</label>
+                    <input type="text" name="pa" id="pa" class="pa" pattern="\d*" maxlength="3" required>
+                    
+                    <label for="pad">PAD</label>
+                    <input type="text" name="pa" id="pad" class="pad" pattern="\d*" maxlength="3" required>
+                    
+                    <label for="pd">PD</label>
+                    <input type="text" name="pd" id="pd" class="pd" pattern="\d*" maxlength="3" required>
+                    
+
+                </fieldset>
+
+                <input type="submit" name="enviar" class="enviar" id="enviar">
+        </fieldset>
+    </form>
+
+
+
+
+</body>
+</html>

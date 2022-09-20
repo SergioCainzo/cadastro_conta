@@ -1,8 +1,4 @@
 // Variáveis
-const elemento = document.querySelector('.mail');
-
-elemento.addEventListener('onblur', regexEmail);
-
 
 
 

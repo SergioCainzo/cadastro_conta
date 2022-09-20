@@ -10,24 +10,24 @@
 </head>
 <body>
     
-    <form action="" class="container formulario">
-        <fieldset class="">
+    <form action="cadastro.html" class="container formulario">
+        <fieldset>
             <fieldset class="container_principal">
                 <legend class="titulo">Criação de conta</legend>
-                <!-- Campo Nome -->
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" class="nome" required placeholder="Nome">
-                <!-- Campo Senha -->
-                <label for="password">Senha</label>
-                <input type="password" id="password" class="password" required placeholder="Senha" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%&*()_=].{6,12}" title="A senha deve contar letra Maiúscula e minúscula, 1 caractere especial e um número.">
-                <!-- Campo E-mail -->
-                <label for="mail">E-mail</label>
-                <input type="email" id="mail" class="mail" required placeholder="exemplo@email.com" onblur="regexEmail()">
-                <!-- Campo Validação de E-mail -->
-                <label for="c_mail">Confirma E-mail</label>
-                <input type="email" id="c_mail" class="c_mail" required placeholder="Confirmar e-mail">
-                <!-- Botão Submit -->
-                <input type="submit" value="Enviar" class="enviar" id="enviar">
+                    <!-- Campo Nome -->
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" class="nome" required placeholder="Nome">
+                    <!-- Campo Senha -->
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" class="password" required placeholder="Senha" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%&*()_=].{6,12}" title="A senha deve contar letra Maiúscula e minúscula, 1 caractere especial e um número. Senha deve conter de 6 à 12 caracteres.">
+                    <!-- Campo E-mail -->
+                    <label for="mail">E-mail</label>
+                    <input type="email" id="mail" class="mail" required placeholder="exemplo@email.com" onblur="regexEmail()">
+                    <!-- Campo Validação de E-mail -->
+                    <label for="c_mail">Confirma E-mail</label>
+                    <input type="email" id="c_mail" class="c_mail" required placeholder="Confirmar e-mail">
+                    <!-- Botão Submit -->
+                    <input type="submit" value="Enviar" class="enviar" id="enviar">
             </fieldset>
         </fieldset>
     </form>
