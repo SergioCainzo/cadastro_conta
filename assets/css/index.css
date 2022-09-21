@@ -1,0 +1,121 @@
+/* Configuração padrão */
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html {
+    background-color: black;
+    color: white;
+}
+
+.padrao {
+    text-align: center;
+    box-shadow: 0 0 200px blueviolet;
+    border-radius: 40px;
+}
+
+/* Inicio das configurações */
+
+.container_primario {
+    width: 20%;
+    height: 50%;
+    border: 1px solid white;
+    position: absolute;
+    top: 50%;
+    left: 12.5%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 200px blueviolet;
+    border-radius: 40px;
+}
+
+.container_secundario {
+    width: 50%;
+    height: 50%;
+    border: 1px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 200px blueviolet;
+    border-radius: 40px;
+}
+
+.container_terciario {
+    width: 20%;
+    height: 50%;
+    border: 1px solid white;
+    position: absolute;
+    top: 50%;
+    left: 87.5%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 200px blueviolet;
+    border-radius: 40px;
+}
+
+h1, h2 {
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+/* Configuração do MENU */
+
+.container_navegacao{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.container_menu{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.8s;
+}
+
+li{
+    margin: 30px 0;
+    list-style: none;
+}
+
+nav a:hover {
+    color: red;
+    font-size: 40px;
+    transform: scale(1.1);
+}
+
+/* Container Central */
+.imagem_guilda {
+    width: 150px;
+}
+
+/* Configuração dos Icones */
+ion-icon {
+    font-size: 30px;
+    color: white;
+}
+
+.logo-discord, .logo-whatsapp{
+    font-size: 60px;
+    transition: all 0.5s;
+}
+
+.logo-whatsapp:hover{
+    font-size: 80px;
+    color: rgb(4, 175, 4);
+}
+
+.logo-discord:hover {
+    font-size: 80px;
+    color: rgb(220, 11, 220);
+}

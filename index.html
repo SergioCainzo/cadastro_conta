@@ -3,35 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet"  href="assets/css/style.css">
-    <title>Criando conta</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Site</title>
 </head>
 <body>
     
-    <form action="cadastro.html" class="container formulario">
-        <fieldset>
-            <fieldset class="container_principal">
-                <legend class="titulo">Criação de conta</legend>
-                    <!-- Campo Nome -->
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" class="nome" required placeholder="Nome">
-                    <!-- Campo Senha -->
-                    <label for="password">Senha</label>
-                    <input type="password" id="password" class="password" required placeholder="Senha" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%&*()_=].{6,12}" title="A senha deve contar letra Maiúscula e minúscula, 1 caractere especial e um número. Senha deve conter de 6 à 12 caracteres.">
-                    <!-- Campo E-mail -->
-                    <label for="mail">E-mail</label>
-                    <input type="email" id="mail" class="mail" required placeholder="exemplo@email.com" onblur="regexEmail()">
-                    <!-- Campo Validação de E-mail -->
-                    <label for="c_mail">Confirma E-mail</label>
-                    <input type="email" id="c_mail" class="c_mail" required placeholder="Confirmar e-mail">
-                    <!-- Botão Submit -->
-                    <input type="submit" value="Enviar" class="enviar" id="enviar">
-            </fieldset>
-        </fieldset>
-    </form>
+    <header>
+        <div>
+            
+        </div>
+    </header>
 
-    <script src="assets/js/main.js"></script>
+    <main class="container padrao">
+        <section class="container_primario">
+            <nav class="container_navegacao">
+                <h2>Menu</h2>
+                <ul class="container_menu">
+                    <li><a href="#"><ion-icon name="finger-print-outline"></ion-icon>Cadastro</a></li>
+                    <li><a href="#"><ion-icon name="book-outline"></ion-icon>Consulta</a></li>
+                    <li><a href="#"><ion-icon name="mail-outline"></ion-icon>Contato</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="container_secundario">
+            <h1 class="titulo">Skull Knights</h1>
+            <img src="assets/imagens/imagem_guilda.png" alt="Skull Knights" class="imagem_guilda">
+            <p class="paragrafo">Guilda formada por amigos para uma troca de ideia massiva e um PVP elegante no game Black Desert Online.</p>
+
+        </section>
+
+        <section class="container_terciario">
+            <nav>
+                <h2>Redes Sociais</h2>
+                <ul>
+                    <li><a href="#"><ion-icon name="logo-discord" class="logo-discord"></ion-icon>Discord</a></li>
+                    <li><a href="#"><ion-icon name="logo-whatsapp" class="logo-whatsapp"></ion-icon>WhatsApp</a></li>
+                </ul>
+            </nav>
+
+        </section>
+        
+    </main>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+
 </body>
 </html>
